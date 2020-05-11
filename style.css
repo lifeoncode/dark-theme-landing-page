@@ -35,6 +35,10 @@ body{
 }
 
 
+ul{
+    list-style: none;
+}
+
 button:focus, input:focus{
     outline: none;
 }
@@ -295,5 +299,459 @@ nav a:hover{
 footer{
     position: relative;
     background-color: var(--footer-bg);
-    padding: 8rem 0;
+    padding: 8rem 0 4rem 0;
+}
+
+.footer_inner{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0 2rem;
+    padding-top: 8rem;
+}
+
+.footer_inner .home img{
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.footer_inner .home p{
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.footer_inner li{
+    font-size: 0.8rem;
+    color: #aaa;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+.footer_inner li:hover{
+    color: var(--white);
+}
+
+
+.footer_inner li img{
+    display: inline;
+    width: 10%;
+}
+
+.footer_inner li span{
+    margin-left: 1rem;
+}
+
+
+.social li{
+    display: inline;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1024px){
+
+    .footer_inner{
+        width: 90%;
+    }
+    
+}
+
+
+
+@media(max-width: 768px){
+
+    
+    
+    header{
+        padding: 3.5rem;
+    }
+    
+    header .logo{
+        width: 40%;
+    }
+    
+    
+    #showcase{
+        width: 70%;
+    }
+    
+    
+    
+    
+    #features{
+        width: 80%;
+    }
+    
+    
+    .features_inner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    
+    
+    
+    
+    #team{
+        width: 90%;
+        margin: auto;
+        padding: 4rem 0 8rem 0;
+    }
+    
+    .team_header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 3rem;
+        padding: 4rem 1rem;
+    }
+    
+    .team_header .text{
+        align-self: auto;
+    }
+    
+    .team_header .text h3{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .team_header .text p{
+        margin-bottom: 0.5rem;
+    }
+    
+    .team_header .text a{
+        color: var(--CTA-color);
+        text-decoration: underline;
+    }
+    
+    .team_header .text img{
+        width: 15%;
+    }
+    
+    
+    
+    .team_content{
+        position: relative;
+        padding: 4rem 0;
+    }
+    
+    .team_content .quote{
+        width: 5%;
+        top: 30px;
+        left: -10px;
+    }
+    
+    .team_content_inner{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 1rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #form{
+        position: absolute;
+        z-index: 2;
+        left: 10%;
+        width: 80%;
+        margin: -6rem auto 0 auto;
+        padding: 4rem 2rem;
+    }
+    
+    #form h3{
+        font-size: 1.5rem;
+    }
+    
+    #form p{
+        font-size: 0.9rem;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    #form input{
+        width: 50%;
+        padding: 0.9rem 1.5rem;
+        border: 0;
+        border-radius: 2rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        position: relative;
+        background-color: var(--footer-bg);
+        padding: 8rem 0 4rem 0;
+    }
+
+    .footer_inner .home img{
+        width: 20%;
+    }
+    
+    .footer_inner{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 2rem 0;
+        padding-top: 8rem;
+    }
+    
+    .footer_inner li img{
+        width: 5%;
+    }
+
+    .footer_inner .social{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 430px){
+    
+    
+    
+    header{
+        padding: 2rem;
+    }
+    
+    header .logo{
+        width: 50%;
+    }
+
+    header nav li{
+        padding: 0 0.5rem;
+    }
+
+    
+    
+    #showcase{
+        width: 80%;
+    }
+    
+    #showcase h1{
+        font-size: 1.5rem;
+    }
+    
+    
+    #features{
+        width: 80%;
+    }
+    
+    
+    .features_inner{
+        grid-template-columns: none;
+        grid-gap: 4rem 0;
+    }
+    
+    
+    
+    
+    #team{
+        width: 80%;
+        margin: auto;
+        padding: 2rem 0 8rem 0;
+    }
+    
+    .team_header{
+        grid-template-columns: none;
+        grid-gap: 3rem 0;
+        padding: 4rem 0;
+    }
+    
+    .team_header .text{
+        padding: 0;
+        align-self: auto;
+    }
+    
+    .team_header .text h3{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .team_header .text p{
+        margin-bottom: 0.5rem;
+    }
+    
+    .team_header .text a{
+        color: var(--CTA-color);
+        text-decoration: underline;
+    }
+    
+    .team_header .text img{
+        width: 15%;
+    }
+    
+    
+    
+    .team_content{
+        position: relative;
+        padding: 4rem 0;
+    }
+    
+    .team_content .quote{
+        width: 5%;
+        top: 30px;
+        left: -10px;
+    }
+    
+    .team_content_inner{
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 1rem 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #form{
+        position: absolute;
+        z-index: 2;
+        left: 5%;
+        width: 90%;
+        margin: -6rem auto 0 auto;
+        padding: 4rem 2rem;
+    }
+    
+    #form h3{
+        font-size: 1.2rem;
+    }
+    
+    #form p{
+        font-size: 0.8rem;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    #form input{
+        width: 100%;
+        padding: 0.9rem 1.5rem;
+        border: 0;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #form button{
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        position: relative;
+        background-color: var(--footer-bg);
+        padding: 8rem 0 4rem 0;
+    }
+
+    .footer_inner .home img{
+        width: 20%;
+    }
+    
+    .footer_inner{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 2rem 0;
+        padding-top: 12rem;
+    }
+    
+    .footer_inner li img{
+        width: 5%;
+    }
+
+    .footer_inner .social{
+        text-align: center;
+    }
 }
